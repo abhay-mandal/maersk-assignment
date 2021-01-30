@@ -80,7 +80,7 @@ li span{
       font-style: italic;
   }
 
-  @media only screen and (max-width: 375px) {
+  @media only screen and (max-width: 560px) {
     /* For mobile phones: */
     .main {
         flex-direction: column-reverse;
