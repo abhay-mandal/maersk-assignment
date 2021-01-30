@@ -45,15 +45,9 @@ function renderCards(list) {
 }
 
 function shuffleList() {
-    let list = JSON.parse(JSON.stringify(cardLists));
-    let shuffledList = list.sort(() => Math.random() - 0.5);
+    let cards = JSON.parse(JSON.stringify(cardLists));
+    let shuffledList = cards.sort(() => Math.random() - 0.5);
     renderCards(shuffledList);
-
-    // let shuffledList = JSON.parse(JSON.stringify(cardLists));
-    // for (let i = list.length - 1; i > 0; i--) {
-    //     const j = Math.floor(Math.random() * (i + 1));
-    //     [list[i], list[j]] = [list[j], list[i]];
-    // }
 }
 
 function sortList() {
